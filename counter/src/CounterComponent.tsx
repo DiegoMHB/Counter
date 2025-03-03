@@ -6,8 +6,10 @@ export default function CounterComponent() {
     const {count, increase} = useContext(CounterContext)
    
   return (
-    <div>
-        <p>Current Count {count}</p>
+    <div style={{display:"flex",
+                gap:"10px"
+    }}>
+        <p>Current Count {count}:</p>
         <button
         onClick={increase}
         >+1</button>
